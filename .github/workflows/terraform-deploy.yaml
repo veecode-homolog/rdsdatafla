@@ -70,7 +70,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           DESTINATION_BRANCH: master
         with:
-          destination_branch: ${{ env.DESTINATION_BRANCH }}
+          destination_branch: master
           source_file: './catalog-info.yaml'
           destination_repo: ${{ github.repository }}
           destination_folder: '/'
