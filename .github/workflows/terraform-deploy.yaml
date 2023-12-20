@@ -63,8 +63,6 @@ jobs:
         run: |
           yq e '.metadata.environment.endpoint = ${{ env.endpoint }}' -i catalog-info.yaml
           cat ./catalog-info.yaml
-          git config --global user.email "valberjr1992@gmail.com"
-          git config --global user.name "ValberJuniore"
   
       - name: Publish Catalogo Info
         uses: dmnemec/copy_file_to_another_repo_action@main
@@ -77,4 +75,6 @@ jobs:
           destination_repo: ${{ github.repository }}
           destination_folder: '/'
           commit_message: Update catalog-info.yaml in the same repo
+          user_name: ValberJunior
+          user_email: valberjr1992@gmail.com
           git_server: github.com
