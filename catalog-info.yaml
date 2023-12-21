@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: veecode-homolog/rdsdatafla
     backstage.io/techdocs-ref: dir:.
-    github/workflows: terraform-deploy.yml,terraform-destroy.yml
+    github.com/workflows: terraform-deploy.yml,terraform-destroy.yml
   environment:
     endpoint: teste.ciz9arz22p50.us-east-1.rds.amazonaws.com
 spec:
